@@ -1,2 +1,5 @@
 .idea/
 SpringCloudApplication.iml
+spring-cloud-demo-application.iml
+config-service/target
+config-service/config-service.iml
