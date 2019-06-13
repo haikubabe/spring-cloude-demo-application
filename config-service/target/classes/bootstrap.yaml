@@ -4,10 +4,9 @@ server:
 spring:
   application:
     name: config-service
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          searchLocations: file:///C:/Users/schowdhury/IdeaProjects/config
+        git:
+          uri: https://github.com/haikubabe/spring-cloud-demo-application
+          searchPaths: config
