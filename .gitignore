@@ -1,3 +1,12 @@
 .idea/
 SpringCloudApplication.iml
 spring-cloud-demo-application.iml
+
+config-service/config-service.iml
+config-service/target
+
+config-client/config-service.iml
+config-client/target
+
+discovery-service/discovery-service.iml
+discovery-service/target

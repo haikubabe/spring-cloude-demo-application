@@ -8,5 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/spring-cloud-demo-application
+          uri: https://github.com/haikubabe/spring-cloud-demo-application
           searchPaths: config
