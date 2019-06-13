@@ -14,12 +14,20 @@
     <packaging>jar</packaging>
 
     <name>config-service</name>
-    <description>Demo project for Spring Cloud</description>
+    <description>Configuration Service</description>
 
     <properties>
         <java.version>1.8</java.version>
         <spring.cloud.version>Greenwich.RELEASE</spring.cloud.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
+            <version>2.1.2.RELEASE</version>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -33,14 +41,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
-            <version>2.1.2.RELEASE</version>
-        </dependency>
-    </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -50,4 +50,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
