@@ -10,3 +10,6 @@ config-client/target
 
 discovery-service/discovery-service.iml
 discovery-service/target
+
+discovery-client/discovery-client.iml
+discovery-client/target

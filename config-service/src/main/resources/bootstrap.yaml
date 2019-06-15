@@ -10,4 +10,4 @@ spring:
     config:
       server:
         native:
-          searchLocations: file:///C:/Users/schowdhury/IdeaProjects/config
+          searchLocations: file://${HOME}/Downloads/IntellijProjects/config
