@@ -8,8 +8,8 @@ config-service/target
 config-client/config-client.iml
 config-client/target
 
-discovery-service/discovery-service.iml
-discovery-service/target
+discovery-server/discovery-server.iml
+discovery-server/target
 
-discovery-client/discovery-client.iml
-discovery-client/target
+discovery-application-service/discovery-application-service.iml
+discovery-application-service/target

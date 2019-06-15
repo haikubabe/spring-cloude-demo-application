@@ -1,6 +1,6 @@
 spring:
   application:
-    name: application-service
+    name: discovery-application-service
 
 eureka:
   client:

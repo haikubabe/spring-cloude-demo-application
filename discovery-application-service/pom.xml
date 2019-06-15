@@ -10,11 +10,11 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>discovery-client</artifactId>
+    <artifactId>discovery-application-service</artifactId>
     <packaging>jar</packaging>
 
-    <name>discovery-client</name>
-    <description>Discovery Client</description>
+    <name>discovery-application-service</name>
+    <description>Discovery Application Service</description>
 
     <properties>
         <java.version>1.8</java.version>

@@ -17,9 +17,9 @@
 
     <modules>
         <module>config-service</module>
-        <module>discovery-service</module>
+        <module>discovery-server</module>
         <module>config-client</module>
-        <module>discovery-client</module>
+        <module>discovery-application-service</module>
     </modules>
 
 </project>
