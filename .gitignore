@@ -13,3 +13,6 @@ discovery-server/target
 
 discovery-application-service/discovery-application-service.iml
 discovery-application-service/target
+
+discovery-application-client/discovery-application-client.iml
+discovery-application-client/target
