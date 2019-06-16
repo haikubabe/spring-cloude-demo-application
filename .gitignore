@@ -2,8 +2,8 @@
 SpringCloudApplication.iml
 spring-cloud-demo-application.iml
 
-config-service/config-service.iml
-config-service/target
+config-server/config-server.iml
+config-server/target
 
 config-client/config-client.iml
 config-client/target
