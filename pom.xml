@@ -20,6 +20,7 @@
         <module>discovery-server</module>
         <module>discovery-application-service</module>
         <module>discovery-application-client</module>
+        <module>config-client</module>
     </modules>
 
 </project>
