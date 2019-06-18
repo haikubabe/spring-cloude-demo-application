@@ -16,3 +16,9 @@ discovery-application-service/target
 
 discovery-application-client/discovery-application-client.iml
 discovery-application-client/target
+
+config-server-discovery/config-server-discovery.iml
+config-server-discovery/target
+
+config-client-discovery/config-client-discovery.iml
+config-client-discovery/target
