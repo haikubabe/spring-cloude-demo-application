@@ -26,6 +26,8 @@
         <module>gateway-service</module>
         <module>hello-service</module>
         <module>goodbye-service</module>
+        <module>gateway-service-discovery</module>
+        <module>hello-service-discovery</module>
     </modules>
 
 </project>

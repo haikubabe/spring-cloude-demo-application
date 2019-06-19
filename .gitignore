@@ -31,3 +31,9 @@ hello-service/target
 
 goodbye-service/goodbye-service.iml
 goodbye-service/target
+
+gateway-service-discovery/gateway-service-discovery.iml
+gateway-service-discovery/target
+
+hello-service-discovery/hello-service-discovery.iml
+hello-service-discovery/target
