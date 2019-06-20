@@ -1,11 +1,9 @@
 FROM openjdk:8-jdk
 MAINTAINER Sreemoyee Chowdhury
 
-ARG CONFIG_SERVER_JAR
-
-ENV SPRING_CLOUD_CONFIG_SERVER_GIT_URI=/spring-cloud/config
-COPY target/$CONFIG_SERVER_JAR /spring-cloud/config-server.jar
-VOLUME /spring-cloud/config
+COPY target/*.jar /spring-config-server/config-server.jar
+VOLUME /config
+WORKDIR /
 EXPOSE 8888
 
-CMD ["java", "-jar", "/spring-cloud/config-server.jar"]
+CMD ["java", "-jar", "spring-config-server/config-server.jar"]
