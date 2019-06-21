@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  config-server:
+    image: config-server
+    ports:
+      - '8888:8888'
+    volumes:
+      - C:\Users\schowdhury\IdeaProjects\config:/config
+    environment:
+      SPRING_CLOUD_CONFIG_SERVER_GIT_URI: /config
+
+  config-client:
+    image: config-client
+    ports:
+      - '8080:8080'
+    environment:
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
+      - SPRING_PROFILES_ACTIVE=default
+    depends_on:
+      - config-server
+    links:
+      - "config-server"
