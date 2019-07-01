@@ -2,22 +2,40 @@ version: '3'
 
 services:
   config-server:
+    container_name: config-server
+    build:
+      context: ./config-server
+      dockerfile: Dockerfile
     image: config-server
+    restart: always
     ports:
       - '8888:8888'
+    networks:
+      - spring-cloud-network
     volumes:
-      - C:\Users\schowdhury\IdeaProjects\config:/config
+      - /home/sreemoyee/Downloads/IntellijProjects/config:/config
     environment:
       SPRING_CLOUD_CONFIG_SERVER_GIT_URI: /config
 
   config-client:
+    container_name: config-client
+    build:
+      context: ./config-client
+      dockerfile: Dockerfile
     image: config-client
+    restart: always
     ports:
       - '8080:8080'
+    networks:
+      - spring-cloud-network
     environment:
       - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
       - SPRING_PROFILES_ACTIVE=default
+    links:
+      - config-server:config-server
     depends_on:
       - config-server
-    links:
-      - "config-server"
+
+networks:
+  spring-cloud-network:
+    driver: bridge 
